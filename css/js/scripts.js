@@ -10,43 +10,32 @@
 
 	$(document).ready(function() {
 	  $("form").submit(function(event) {
-	    var favoriteCelebrity = $("#celebrity").val();
-	    var favoriteColor = $("input:radio[name=color]:checked").val();
-	    var favoriteFood = $("input:radio[name=food]:checked").val();
-	    var favoriteMovieTv = $("input:radio[name=movie-tv]:checked").val();
+	    var favoriteLanguage = $("#language").val();
 	    var favoriteVacation = $("input:radio[name=vacation]:checked").val();
+	    var favoriteCusine = $("input:radio[name=cusine]:checked").val();
+	    var favoriteAccomodations = $("input:radio[name=acomodations]:checked").val();
+      var favoriteApproach = $("input:radio[name=approach]:checked").val();
+      var favoriteRandom = $("input:radio[name=random]:checked").val();
 
 
-	    if (favoriteColor === "green" && favoriteFood === "sushi" && favoriteMovieTv === "notebook" && favoriteVacation === "bali") {
-	      $('#ryan').show();
-	      $('#woody, #kathy, #jamie, #no-match').hide();
-	      // $('#kathy').hide();
-	      // $('#jamie').hide();
-	      // $('#no-match').hide();
-	    } else if (favoriteColor === "red" && favoriteFood === "pizza" && favoriteMovieTv === "cheers" && favoriteVacation === "mexico") {
-	      $('#woody').show();
-	      $('#ryan').hide();
-	      $('#kathy').hide();
-	      $('#jamie').hide();
-	      $('#no-match').hide();
-	    } else if (favoriteColor === "blue" && favoriteFood === "cheeseburger" && favoriteMovieTv === "misery" && favoriteVacation === "switzerland") {
-	      $('#kathy').show();
-	      $('#ryan').hide();
-	      $('#woody').hide();
-	      $('#jamie').hide();
-	      $('#no-match').hide();
-	    } else if (favoriteColor === "purple" && favoriteFood === "fried-chicken" && favoriteMovieTv === "sense8" && favoriteVacation === "tahiti") {
-	      $('#jamie').show();
-	      $('#ryan').hide();
-	      $('#woody').hide();
-	      $('#kathy').hide();
-	      $('#no-match').hide();
+	    if (favoriteVacation === "tropics" && favoriteCusine === "seafood" && favoriteAccomodations === "youth hostel" && favoriteApproach === "visual concept" && favoriteRandom === "i am always on time") {
+	      $('#ruby').show();
+	      $('#java, #c++, #python, #no-match').hide();
+	    } else if (favoriteVacation === "red" && favoriteCusine === "pizza" && favoriteAccomodations === "cheers" && favoriteAppraoch === "mexico" && favoriteRandom === "i am the ife of the party") {
+        $('#ruby').show();
+        $('#java, #c++, #python, #no-match').hide();
+	    } else if (favoriteVacation === "blue" && favoriteCusine === "cheeseburger" && favoriteAccomodations === "misery" && favoriteVApproach === "switzerland" && favoriteRandom === "i never give up on true love") {
+        $('#ruby').show();
+        $('#java, #c++, #python, #no-match').hide();
+	    } else if (favoriteVacation === "purple" && favoriteCusine === "fried-chicken" && favoriteAccomodations === "sense8" && favoriteApproach === "tahiti" && favoriteRandom === "i will be rich someday") {
+        $('#ruby').show();
+	      $('#java, #c++, #python, #no-match').hide();
+      } else if (favoriteVacation === "purple" && favoriteCusine === "fried-chicken" && favoriteAccomodations === "sense8" && favoriteApproach === "tahiti" && favoriteRandom === "i am always on time") {
+        $('#ruby').show();
+        $('#java, #c++, #python, #no-match').hide();
 	    } else {
-	      $('#no-match').show();
-	      $('#jamie').hide();
-	      $('#ryan').hide();
-	      $('#woody').hide();
-	      $('#kathy').hide();
+        $('#ruby').show();
+	      $('#java, #c++, #python, #no-match').hide();
 	    }
 
 
