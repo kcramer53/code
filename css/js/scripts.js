@@ -10,7 +10,8 @@
 
 	$(document).ready(function() {
 	  $("form").submit(function(event) {
-	    var favoriteVacation = $("#vacation").val();
+	    var favoritelanguage = $("#language").val();
+      	    var favoriteVacation=$("input:radio[name=vacation]:checked").val();
 	    var favoriteCusine = $("input:radio[name=cusine]:checked").val();
 	    var favoriteAccomodations = $("input:radio[name=accomodations]:checked").val();
 	    var favoriteMApproach = $("input:radio[name=approach]:checked").val();
