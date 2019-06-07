@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+	  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+	  <link href="css/styles.css" rel="stylesheet" type="text/css">
+	  <script src="js/jquery-3.4.1.js"></script>
+	  <script src="js/scripts.js"></script>
+	  <title>Celebrity match</title>
+	</head>
+	<body>
+	  <div class="container">
+	    <h1>Language Selector</h1>
+
+
+
+
+	    <form id="Language Selection Criteria">
+	      <label for="age">Age</label>
+	      <input id="age" type="text">
+	      <label for="gender">Gender</label>
+	      <select id="gender">
+	        <option value="female">Female</option>
+	        <option value="male">Male</option>
+	      </select>
+
+
+	      <!-- <button type="submit" class="btn">Calculate my Language Selection</button> -->
+	      <!-- </form> -->
+
+
+	      <div id="language">
+	        <p>Just by answering a few questions, our survey can help you decide what code language
+            is best suited for you!.</p>
+	        <p>Choose your Language:</p>
+
+
+	        <div class="form-group">
+	          <label for="language">What is your favorite language?</label>
+	          <select class="form-control" id="language">
+
+
+	            <option value="Ruby on Rails">Ruby on Rails</option>
+	            <option value="Java Script">Java Script</option>
+	            <option value="C++">C++</option>
+	            <option value="Python">Python</option>
+	          </select>
+	        </div>
+	        <br>
+
+
+	        <!-- First question VACATION -->
+
+
+	        <label for="vacation">What type of vacation do you prefer?</label>
+	        <div class="radio">
+	          <label>
+	            <input type="radio" name="vacation" value="The Tropics" checked>
+	            Green
+	          </label>
+	        </div>
+	        <div class="radio">
+	          <label>
+	            <input type="radio" name="vacation" value="The Mountians">
+	            Red
+	          </label>
+	        </div>
+	        <div class="radio">
+	          <label>
+	            <input type="radio" name="vacation" value="The Dessert">
+	            Blue
+	          </label>
+	        </div>
+	        <div class="radio">
+	          <label>
+	            <input type="radio" name="vacation" value="A Staycation">
+	            Purple
+	          </label>
+	        </div>
+	        <br>
+
+
+	        <!-- Second question CUSINE -->
+
+
+	        <label for="cusine">What kind of cusine do you prefer?</label>
+	        <div class="radio">
+	          <label>
+	            <input type="radio" name="cusine" value="seafood" checked>
+	            Seafood
+	          </label>
+	        </div>
+	        <div class="radio">
+	          <label>
+	            <input type="radio" name="cusine" value="exotic">
+	            exotic
+	          </label>
+	        </div>
+	        <div class="radio">
+	          <label>
+	            <input type="radio" name="cusine" value="traditional">
+	            traditional
+	          </label>
+	        </div>
+	        <div class="radio">
+	          <label>
+	            <input type="radio" name="cusine" value="meat&taters">
+	            meat&taters
+	          </label>
+	        </div>
+	        <br>
+
+
+	        <!-- Third question MOVIE OR TV SHOW -->
+
+
+	        <label for="movie-tv">What movie or tv show do you prefer?</label>
+	        <div class="radio">
+	          <label>
+	            <input type="radio" name="movie-tv" value="notebook" checked>
+	            The Notebook
+	          </label>
+	        </div>
+	        <div class="radio">
+	          <label>
+	            <input type="radio" name="movie-tv" value="cheers">
+	            Cheers
+	          </label>
+	        </div>
+	        <div class="radio">
+	          <label>
+	            <input type="radio" name="movie-tv" value="misery">
+	            Misery
+	          </label>
+	        </div>
+	        <div class="radio">
+	          <label>
+	            <input type="radio" name="movie-tv" value="sense8">
+	            Sense8
+	          </label>
+	        </div>
+	        <br>
+
+
+	        <!-- Fourth question VACATION -->
+
+
+	        <label for="vacation">What vacation destination do you prefer?</label>
+	        <div class="radio">
+	          <label>
+	            <input type="radio" name="vacation" value="bali" checked>
+	            Bali
+	          </label>
+	        </div>
+	        <div class="radio">
+	          <label>
+	            <input type="radio" name="vacation" value="mexico">
+	            Mexico
+	          </label>
+	        </div>
+	        <div class="radio">
+	          <label>
+	            <input type="radio" name="vacation" value="switzerland">
+	            Switzerland
+	          </label>
+	        </div>
+	        <div class="radio">
+	          <label>
+	            <input type="radio" name="vacation" value="tahiti">
+	            Tahiti
+	          </label>
+	        </div>
+	        <br>
+
+
+	        <div class="button">
+	          <button class="btn btn-success" id="button1">Submit</button>
+	        </div>
+	      </form>
+	    </div>
+	    <div>
+	      <h1 id="ryan">Ryan Gosling</h1>
+	      <h1 id="woody">Woody Harrelson</h1>
+	      <h1 id="kathy">Kathy Bates</h1>
+	      <h1 id="jamie">Jamie Clayton</h1>
+	      <h1 id="no-match">You didn't match with any celebrity. :(</h1>
+	    </div>
+	  </div>
+	</body>
+	</html>
