@@ -18,24 +18,21 @@
       var favoriteRandom = $("input:radio[name=random]:checked").val();
 
 
-	    if (favoriteVacation === "tropics" && favoriteCusine === "seafood" && favoriteAccomodations === "youth hostel" && favoriteApproach === "visual concept" && favoriteRandom === "i am always on time") {
+	    if (favoriteVacation === "the tropics" && favoriteCusine === "seafood" && favoriteAccomodations === "youth hostel" && favoriteApproach === "visual concept" && favoriteRandom === "i am always on time") {
 	      $('#ruby').show();
 	      $('#java, #c++, #python, #no-match').hide();
-	    } else if (favoriteVacation === "red" && favoriteCusine === "pizza" && favoriteAccomodations === "cheers" && favoriteAppraoch === "mexico" && favoriteRandom === "i am the ife of the party") {
-        $('#ruby').show();
-        $('#java, #c++, #python, #no-match').hide();
-	    } else if (favoriteVacation === "blue" && favoriteCusine === "cheeseburger" && favoriteAccomodations === "misery" && favoriteVApproach === "switzerland" && favoriteRandom === "i never give up on true love") {
-        $('#ruby').show();
-        $('#java, #c++, #python, #no-match').hide();
-	    } else if (favoriteVacation === "purple" && favoriteCusine === "fried-chicken" && favoriteAccomodations === "sense8" && favoriteApproach === "tahiti" && favoriteRandom === "i will be rich someday") {
-        $('#ruby').show();
-	      $('#java, #c++, #python, #no-match').hide();
-      } else if (favoriteVacation === "purple" && favoriteCusine === "fried-chicken" && favoriteAccomodations === "sense8" && favoriteApproach === "tahiti" && favoriteRandom === "i am always on time") {
-        $('#ruby').show();
-        $('#java, #c++, #python, #no-match').hide();
+	    } else if (favoriteVacation === "the mountians" && favoriteCusine === "exotic" && favoriteAccomodations === "all inclusive" && favoriteAppraoch === "demonstration" && favoriteRandom === "i am the ife of the party") {
+        $('#java').show();
+        $('#ruby, #c++, #python, #no-match').hide();
+	    } else if (favoriteVacation === "the dessert" && favoriteCusine === "traditionl" && favoriteAccomodations === "hotel" && favoriteVApproach === "online" && favoriteRandom === "i never give up on true love") {
+        $('#C++').show();
+        $('#java, #ruby, #python, #no-match').hide();
+	    } else if (favoriteVacation === "staycation" && favoriteCusine === "meat & taters" && favoriteAccomodations === "tent" && favoriteApproach === "classrom" && favoriteRandom === "i will be rich someday") {
+        $('#Python').show();
+	      $('#java, #c++, #ruby, #no-match').hide();
 	    } else {
-        $('#ruby').show();
-	      $('#java, #c++, #python, #no-match').hide();
+        $('#no-match').show();
+	      $('#java, #c++, #python, #ruby').hide();
 	    }
 
 
